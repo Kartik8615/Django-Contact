@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>KLE College of Engineering and Technology,Chikodi</title>
+    
+</head>
+<body>
+    <center>
+        <h1>KLE College of Engineering and Technology,Chikodi Help Desk</h1>
+        <h2>CONNECT WITH US</h2>
+        <h3>We Would Love to Respond to your Queries</h3>
+        <hr />
+        <form method="POST">
+           {% csrf_token %}
+        <table border="1">
+        {{forms}}
+        </table>
+    <input type="submit" value="Send" />
+</form>
+    </center>
+
+    <div class="contact-right">
+        <h3>Reach Us</h3>
+
+        <table>
+            <tr>
+                <td>Email</td>
+                <td>contactus@example.com</td>
+            </tr>
+            <tr>
+               <td>Phone</td>
+               <td>1234567890</td>
+           </tr>
+           <tr>
+               <td>Address</td>
+               <td>KLE College of Enginnering and Technology,<br>
+                   Chikodi
+               </td>
+           </tr>
+        </table>
+    
+</body>
+</html>
